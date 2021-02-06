@@ -1,1 +1,51 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+
+.title {
+    font-style: normal;
+    font-family: Roboto;
+    position: relative;
+    left: 100px;
+    color: #FFFFFF;
+}
+
+body {
+    background-color: #2C2F33;
+}
+
+.bot-name{
+    position: absolute;
+    width: 454px;
+    height: 113px;
+    left: 122px;
+    top: 374px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 112px;
+    color: #FFFFFF;
+}
+
+.rounded-button {
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    left: 122px;
+    top: 600px;
+    
+    background: #7289DA;
+    border-radius: 25px;
+    
+}
+
+a {
+    position: relative;
+    left: 70px;
+    top: 15px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
