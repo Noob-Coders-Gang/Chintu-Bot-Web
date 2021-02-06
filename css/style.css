@@ -47,6 +47,10 @@ body {
 }
 
 a {
+    color: #FFFFFF;
+}
+
+.link {
     position: relative;
     left: 70px;
     top: 15px;
@@ -130,13 +134,24 @@ top: 0px;
 }
 
 
-/*.fa-instagram {
-    position: absolute;
-    left: ;
-    right: ;
-    top: 400px;
-    bottom: ;
+.fa-instagram {
+    color: #FFFFFF;
+}
 
-    color: #FEFEFE;
-}/
+.ig1 {
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
 
+.git1 {
+    position: relative;
+    bottom: 20px;
+    left: 120px;
+}
+
+.li1 {
+    position: relative;
+    bottom: 65px;
+    left: 220px;
+}
