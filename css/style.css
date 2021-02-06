@@ -209,7 +209,7 @@ top: 0px;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
-    line-height: 112px;
+    line-height: 20px;
     color: #FFFFFF;
     text-align: left;
 }
@@ -221,4 +221,10 @@ top: 0px;
     font-size: 24px;
     color: #FFFFFF;
     text-align: left;
+}
+
+.widget {
+    position: relative;
+    left: 700px;
+    top: 200px;
 }
