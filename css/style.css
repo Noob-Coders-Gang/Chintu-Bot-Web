@@ -229,3 +229,8 @@ top: 0px;
     left: 1400px;
     top: 200px;
 }
+
+.bg2 {
+    background-color: #2C2F33;
+    padding: 10px 20px;
+}
