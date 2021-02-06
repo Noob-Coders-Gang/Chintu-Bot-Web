@@ -107,6 +107,24 @@ top: 0px;
     color: #FFFFFF;
 }
 
+.commands {
+    position: absolute;
+    width: 49px;
+    height: 21px;
+    left: 1750px;
+    top: 39px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
 .gaurav {
     position: absolute;
     width: 300px;
@@ -164,4 +182,43 @@ top: 0px;
     line-height: 112px;
     color: #FFFFFF;
     text-align: center;
+}
+
+.chintubot {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 112px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.commands-list {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 112px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.Fun {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 112px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.fun-list {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: left;
 }
