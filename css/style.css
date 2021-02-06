@@ -57,3 +57,86 @@ a {
     line-height: 21px;
     color: #FFFFFF;
 }
+
+.image {
+    position: absolute;
+width: 720px;
+height: 1024px;
+left: 1185px;
+top: 0px;
+
+}
+
+.home {
+    position: absolute;
+    width: 49px;
+    height: 21px;
+    left: 1400px;
+    top: 39px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.about {
+    position: absolute;
+    width: 49px;
+    height: 21px;
+    left: 1600px;
+    top: 39px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.gaurav {
+    position: absolute;
+    width: 300px;
+    height: 479px;
+    left: 102px;
+    top: 261px;
+
+    background: #7289DA;
+    
+}
+
+.gaurav-img {
+    position: absolute;
+
+}
+
+.rahul {
+    position: absolute;
+    width: 300px;
+    height: 479px;
+    left: 570px;
+    top: 261px;
+
+    background: #7289DA;
+}
+
+
+/*.fa-instagram {
+    position: absolute;
+    left: ;
+    right: ;
+    top: 400px;
+    bottom: ;
+
+    color: #FEFEFE;
+}/
+
