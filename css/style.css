@@ -155,3 +155,13 @@ top: 0px;
     bottom: 65px;
     left: 220px;
 }
+
+.name-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 112px;
+    color: #FFFFFF;
+    text-align: center;
+}
