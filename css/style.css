@@ -39,7 +39,7 @@ body {
     position: absolute;
     width: 250px;
     height: 50px;
-    left: 122px;
+    left: 220px;
     top: 600px;
     
     background: #7289DA;
@@ -242,5 +242,5 @@ top: 0px;
     font-size: 32px;
     line-height: 10px;
     color: #FFFFFF;
-    text-align: left;
+    text-align: center;
 }
