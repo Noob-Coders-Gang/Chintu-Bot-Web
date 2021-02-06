@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,36 +10,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <h1 class="title">Chintubot</h1>
 
-    <div class="bot-name"> 
+    <div class="bot-name">
         Chintu Bot
-        <p class="server-count">Currently in: <p class="server-count" id="servers"></p></p>
+        <p class="server-count" id="servers">Currently in ⌛ servers
+        </p>
     </div>
 
     <script>
-        var response = fetch('https://api.jsonbin.io/b/601ee476d5aafc6431a4d96b/11', {method: 'GET',
-                                                 headers: {'secret-key': '$2b$10$OgkBiBLjDeLFpRDpKaSwJOHZDsGclpeBgWobwl4ZqEta2M21auKJe'}
-                                                }).then(response => response.json()).then(data => document.getElementById("servers").innerHTML = data.total_servers);
-        
-        </script>
-        
-   
+        var response = fetch('https://api.jsonbin.io/b/601ee476d5aafc6431a4d96b/11', {
+            method: 'GET',
+            headers: { 'secret-key': '$2b$10$OgkBiBLjDeLFpRDpKaSwJOHZDsGclpeBgWobwl4ZqEta2M21auKJe' }
+        }).then(response => response.json()).then(data => document.getElementById("servers").innerHTML = "Currently in " + data.total_servers + " servers");//appendChild(document.createTextNode(data.total_servers+" servers")));
+
+    </script>
+
+
 
     <div class="rounded-button">
         <div class="link">
-        <a href="https://discord.com/api/oauth2/authorize?client_id=790900950885203978&permissions=0&scope=bot">Add to Server</a>
+            <a href="https://discord.com/api/oauth2/authorize?client_id=790900950885203978&permissions=0&scope=bot">Add
+                to Server</a>
         </div>
     </div>
 
     <div class="widget">
-        <iframe src="https://discord.com/widget?id=774508475337932830&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+        <iframe src="https://discord.com/widget?id=774508475337932830&theme=dark" width="350" height="500"
+            allowtransparency="true" frameborder="0"
+            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
         </iframe>
     </div>
 
-    
-    
+
+
     <div class="home">
         <a href="index.html">Home</a>
     </div>
@@ -51,4 +58,5 @@
         <a href="commands.html">Commands</a>
     </div>
 </body>
+
 </html>
