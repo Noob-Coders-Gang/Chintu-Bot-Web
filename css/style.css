@@ -18,6 +18,8 @@
 body {
     background-color: #2C2F33;
     background-image: url(https://i.redd.it/vda9rbt01en01.png) ;
+    width: auto;
+    height: auto;
 }
 
 .bot-name{
