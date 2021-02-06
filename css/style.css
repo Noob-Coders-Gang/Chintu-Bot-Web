@@ -1,9 +1,17 @@
 
 .title {
-    font-style: normal;
+    position: absolute;
+    width: 113px;
+    height: 28px;
+    left: 102px;
+    top: 36px;
+    
     font-family: Roboto;
-    position: relative;
-    left: 100px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    
     color: #FFFFFF;
 }
 
