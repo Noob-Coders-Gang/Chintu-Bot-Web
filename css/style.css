@@ -153,7 +153,15 @@ top: 0px;
 
     background: #7289DA;
 }
+.devansh {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 1038px;
+    top: 261px;
 
+    background: #7289DA;
+}
 
 .fa-instagram {
     color: #FFFFFF;
