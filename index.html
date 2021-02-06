@@ -14,8 +14,16 @@
 
     <div class="bot-name"> 
         Chintu Bot
+        <p class="server-count">Currently in: <p class="server-count" id="servers"></p></p>
     </div>
 
+    <script>
+        var response = fetch('https://api.jsonbin.io/b/601ee476d5aafc6431a4d96b/8', {method: 'GET',
+                                                 headers: {'secret-key': '$2b$10$OgkBiBLjDeLFpRDpKaSwJOHZDsGclpeBgWobwl4ZqEta2M21auKJe'}
+                                                }).then(response => response.json()).then(data => document.getElementById("servers").innerHTML = data.total_servers);
+        
+        </script>
+        
    
 
     <div class="rounded-button">

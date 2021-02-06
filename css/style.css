@@ -234,3 +234,13 @@ top: 0px;
     background-color: #2C2F33;
     padding: 10px 20px;
 }
+
+.server-count {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 10px;
+    color: #FFFFFF;
+    text-align: left;
+}
