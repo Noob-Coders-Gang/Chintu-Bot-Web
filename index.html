@@ -18,7 +18,7 @@
     </div>
 
     <script>
-        var response = fetch('https://api.jsonbin.io/b/601ee476d5aafc6431a4d96b/8', {method: 'GET',
+        var response = fetch('https://api.jsonbin.io/b/601ee476d5aafc6431a4d96b/11', {method: 'GET',
                                                  headers: {'secret-key': '$2b$10$OgkBiBLjDeLFpRDpKaSwJOHZDsGclpeBgWobwl4ZqEta2M21auKJe'}
                                                 }).then(response => response.json()).then(data => document.getElementById("servers").innerHTML = data.total_servers);
         
