@@ -1,8 +1,7 @@
 body {
     background-color: #2C2F33;
     background-image: url(https://i.redd.it/vda9rbt01en01.png);
-    width: auto;
-    height: auto;
+    background-size: cover;
     font-family: Roboto;
 }
 
@@ -74,8 +73,8 @@ a {
     position: absolute;
     width: 454px;
     height: 113px;
-    left: 122px;
-    top: 374px;
+    left: 10%;
+    top: 30%;
 
     font-family: Roboto;
     font-style: normal;
@@ -88,12 +87,10 @@ a {
     position: absolute;
     width: 250px;
     height: 50px;
-    left: 220px;
-    top: 600px;
-
+    left: 16%;
+    top: 60%;
     background: #7289DA;
     border-radius: 25px;
-
 }
 
 a {
@@ -225,8 +222,8 @@ a {
 
 .widget {
     position: absolute;
-    left: 1400px;
-    top: 200px;
+    left: 70%;
+    top: 25%;
 }
 
 .bg2 {
