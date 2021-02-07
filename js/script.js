@@ -8,3 +8,46 @@ toggle.addEventListener('click', () => {
 navbarNav.addEventListener('click', () => {
     navbarNav.classList.toggle('show');
 });
+
+const servercount = document.getElementById("servercount");
+if (servercount) {
+    var response = fetch('https://api.jsonbin.io/b/601fd08306934b65f52f9c21', {
+        method: 'GET',
+        headers: {
+            'secret-key': '$2b$10$a6p5jjOS/B8kt5XvcI.qEeuacgrRS.3YzUAyojN4UvhjWiQ1TcvAe'
+        }
+    }).then(response => response.json()).then(data => servercount.innerHTML =
+        "Currently in " + data.total_servers + " servers"
+    ); //appendChild(document.createTextNode(data.total_servers+" servers")));
+}
+const options = document.querySelectorAll('.option');
+const allCommands = document.querySelectorAll('.command')
+
+function removeSelected() {
+    options.forEach(option => {
+        option.classList.remove('selected')
+    })
+}
+if (options) {
+    options.forEach(option => {
+        option.addEventListener('click', () => {
+            removeSelected()
+            option.classList.add('selected');
+            if (option.innerHTML == "All") {
+                allCommands.forEach(allCommand => {
+                    allCommand.classList.remove('d-none')
+                })
+                console.log(option.innerHTML)
+            } else {
+                const commands = document.querySelectorAll(`#${option.innerHTML}`);
+                allCommands.forEach(allCommand => {
+                    allCommand.classList.add('d-none')
+                })
+                commands.forEach(command => {
+                    command.classList.remove('d-none')
+                })
+
+            }
+        })
+    })
+}

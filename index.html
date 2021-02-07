@@ -5,21 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chintubot</title>
+    <meta name="google-site-verification" content="RWT7txKa1KJ6yrms9gLSjb2ViDlADt2IOOd6ryR8d6E" />
+    <meta name="description" content="This is a Chintu Bot for Moderation, Memes, Fun and many More">
+    <!-- Open Graph Protocol  -->
+    <meta property="og:title" content="Chintu Bot" />
+    <meta property="og:description" content="This is a Chintu Bot for Moderation, Memes, Fun and many More" />
+    <meta property="og:type" content="image.png" />
+    <meta property="og:url" content="https://soulless-404.github.io/Chintubot/" />
+    <meta property="og:image" content="https://soulless-404.github.io/Chintubot/img/icon.png" />
+    <meta property="og:site_name" content="ChintuBot" />
+    <!-- Open Graph Protocol Ends  -->
+    <title>ChintuBot | Discord Bot | Chintu Bot</title>
+    <link rel="icon" href="img/icon.png">
     <link rel="stylesheet" href="css/grid.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 </head>
 
 <body>
     <!-- Navbar Starts  -->
     <nav class="navbar">
         <div class="container">
-            <a href="/" class="navbar-brand">
+            <a href="index.html" class="navbar-brand">
                 <h1>Chintu Bot</h1>
             </a>
-            <div class="toggle">ff
+            <div class="toggle">
                 <i class="fas fa-bars"></i>
             </div>
             <div class="navbar-nav">
@@ -30,29 +40,27 @@
         </div>
     </nav>
     <!-- Navbar Ends  -->
-    <div class="bot-name">
-        Chintu Bot
-        <p class="server-count" id="servers">Currently in ⌛ servers
-        </p>
-    </div>
-
-    <script>
-        var response = fetch('https://api.jsonbin.io/b/601ee476d5aafc6431a4d96b/11', {
-            method: 'GET',
-            headers: {
-                'secret-key': '$2b$10$OgkBiBLjDeLFpRDpKaSwJOHZDsGclpeBgWobwl4ZqEta2M21auKJe'
-            }
-        }).then(response => response.json()).then(data => document.getElementById("servers").innerHTML =
-            "Currently in " + data.total_servers + " servers"
-        ); //appendChild(document.createTextNode(data.total_servers+" servers")));
-    </script>
-
-
-
-    <div class="rounded-button">
-        <div class="link">
-            <a href="https://discord.com/api/oauth2/authorize?client_id=790900950885203978&permissions=0&scope=bot">Add
-                to Server</a>
+    <!-- Hero Starts -->
+    <div class="container">
+        <div class="row hero">
+            <div class="col-12 col-md-6">
+                <div class="title">
+                    Chintu Bot
+                </div>
+                <div class="servercount" id="servercount">
+                    Currently in ⌛ servers
+                </div>
+                <a href="https://discord.com/api/oauth2/authorize?client_id=790900950885203978&permissions=0&scope=bot"
+                    class="addbutton">
+                    Add to Server
+                </a>
+            </div>
+            <div class="col-12 col-md-6 joindiscord">
+                <iframe src="https://discord.com/widget?id=774508475337932830&theme=dark" width="350" height="500"
+                    allowtransparency="true" frameborder="0"
+                    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+                </iframe>
+            </div>
         </div>
     </div>
 
@@ -70,6 +78,7 @@
 
 
 
+    <!-- Hero Ends  -->
     <script src="js/script.js"></script>
 </body>
 

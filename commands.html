@@ -1,100 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ChintuBot | Discord Bot | Commands</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="css/grid.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/14a5a39b98.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 </head>
+
 <body>
-    
-    <div class="bg2">
-    <a href="index.html"><h1 class="chintubot">Chintubot</h1></a>
-    <ul class="commands-list">
-        <li>Prefix - $</li>
-    </ul>
+    <!-- Navbar Starts  -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <h1>Chintu Bot</h1>
+            </a>
+            <div class="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="about.html" class="nav-item">About</a>
+                <a href="commands.html" class="nav-item">Commands</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Ends  -->
+    <div class="container">
+        <div class="row commandoptions">
+            <div class="col-12">
+                <div class="options">
+                    <div class="option selected">All</div>
+                    <div class="option">info</div>
+                    <div class="option">moderation</div>
+                    <div class="option">memes</div>
+                    <div class="option">fun</div>
+                    <div class="option">social</div>
+                    <div class="option">others</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row commands">
+            <div class="col-12">
+                <div class="command" id="info">$avatar <span class="description"> - Get a User's Avatar</span></div>
+                <div class="command" id="info">$channelinfo <span class="description"> - Get Channel's Details</span>
+                </div>
+                <div class="command" id="info">$server <span class="description"> - Get Server's Details </span></div>
+                <div class="command" id="info">$user <span class="description"> - Get User's Details</span></div>
+                <!--  -->
+                <div class="command" id="moderation">$ban <span class="description"> - Bans the mentioned member </span>
+                </div>
+                <div class="command" id="moderation">$clear <span class="description"> - Clear's Messeges</span></div>
+                <div class="command" id="moderation">$kick <span class="description"> - Kick a Member </span></div>
+                <div class="command" id="moderation">$mute <span class="description"> - Mute a Member </span></div>
+                <div class="command" id="moderation">$unmute <span class="description"> - Unmute a Member</span></div>
+                <div class="command" id="moderation">$role <span class="description"> - Asks tagged user to take
+                        roles</span></div>
 
-    <h2 class="Fun"><b><u>Fun:</u></b></h2>
-    <ul class="fun-list">
-        <li>HOF</li>
-        <li>_8ball</li>
-        <li>camel</li>
-        <li>chintusearch</li>
-        <li>count</li>
-        <li>emojify</li>
-        <li>retard</li>
-        <li>reverse</li>
-        <li>say</li>
-    </ul>
-
-    <h2 class="Fun"><b><u>Github:</u></b></h2>
-    <ul class="fun-list">
-        <li>gituser</li>
-        <li>repos</li>
-    </ul>
-
-    <h2 class="Fun"><b><u>Google:</u></b></h2>
-    <ul class="fun-list">
-        <li>gsearch</li>
-    </ul>
-
-    <h2 class="Fun"><b><u>Info:</u></b></h2>
-    <ul class="fun-list">
-        <li>avatar</li>
-        <li>channelinfo</li>
-        <li>server</li>
-        <li>user</li>
-    </ul>
-
-    <h2 class="Fun"><b><u>Meme:</u></b></h2>
-    <ul class="fun-list">
-        <li>csmeme</li>
-        <li>foodporn</li>
-        <li>meme</li>
-        <li>uwu</li>
-        <li>wsmeme</li>
-    </ul>
-
-    <h2 class="Fun"><b><u>Mod:</u></b></h2>
-    <ul class="fun-list">
-        <li>clear</li>
-        <li>kick</li>
-        <li>mute</li>
-        <li>removewarn</li>
-        <li>unmute</li>
-        <li>warn</li>
-        <li>warns</li>
-        <li>role</li>
-    </ul>
-
-    <h2 class="Fun"><b><u>Reply:</u></b></h2>
-    <ul class="fun-list">
-        <li>add_reply</li>
-    </ul>
-
-    <h2 class="Fun"><b><u>Subscribers:</u></b></h2>
-    <ul class="fun-list">
-        <li>CreateLiveSubs</li>
-    </ul>
-
-    <h2 class="Fun"><b><u>Utility:</u></b></h2>
-    <ul class="fun-list">
-        <li>ping</li>
-    </ul>
-
-    
-    <h2 class="Fun"><b><u>nocategory:</u></b></h2>
-    <ul class="fun-list">
-        <li>help</li>
-    </ul>
-</div>
-
-
+                <div class="command" id="moderation">$warn <span class="description"> - Warns a Member</span></div>
+                <div class="command" id="moderation">$removewarn <span class="description"> - Remove Warnings of a
+                        Member </span></div>
+                <div class="command" id="moderation">$warns <span class="description"> - Lists All Warnings of a
+                        Member</span></div>
+                <!--  -->
+                <div class="command" id="memes">$csmeme <span class="description"> - Get a random Programming Meme
+                    </span></div>
+                <div class="command" id="memes">$foodporn <span class="description"> - Get random Food's Images </span>
+                </div>
+                <div class="command" id="memes">$meme <span class="description"> - Get a random Meme</span></div>
+                <div class="command" id="memes">$uwu <span class="description"> - Sends an awww inducing picture </span>
+                </div>
+                <div class="command" id="memes">$wsmeme <span class="description"> - Sends a meme from r/WholesomeMemes
+                    </span></div>
+                <!--  -->
+                <div class="command" id="fun">$HOF <span class="description"> - Hall of Fame (for extremely dumb/smart
+                        people) </span></div>
+                <div class="command" id="fun">$_8ball <span class="description"> - Evident by the name </span></div>
+                <div class="command" id="fun">$camel <span class="description"> - Makes text camelcase </span></div>
+                <div class="command" id="fun">$chintusearch <span class="description"> - Special search for special
+                        people </span></div>
+                <div class="command" id="fun">$count <span class="description"> - Returns total number of messages in a
+                        channel </span></div>
+                <div class="command" id="fun">$emojify <span class="description"> - Emojifys given text </span></div>
+                <div class="command" id="fun">$retard <span class="description"> - Changes text into rEtArD cAsE </span>
+                </div>
+                <div class="command" id="fun">$reverse <span class="description"> - Reverses a message for you </span>
+                </div>
+                <div class="command" id="fun">$say <span class="description"> - Says a message on behalf of the user
+                    </span></div>
+                <!--  -->
+                <div class="command" id="social">$gituser <span class="description"> - Returns info about a github
+                        user</span></div>
+                <div class="command" id="social">$repos <span class="description"> - Returns top 5 repositories of the
+                        requested user </span></div>
+                <div class="command" id="social">$gsearch <span class="description"> - Returns top google search results
+                        for the given query </span></div>
+                <div class="command" id="social">$CreateLiveSubs <span class="description"> - Creates a voice channel
+                        with the subscribers of the given channel </span></div>
+                <!--  -->
+                <div class="command" id="others">$add_reply <span class="description"> - </span></div>
+                <div class="command" id="others">$ping <span class="description"> - Shows Ping</span></div>
+                <div class="command" id="others">$help <span class="description"> - Shows Help message</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
-</html>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</html>
