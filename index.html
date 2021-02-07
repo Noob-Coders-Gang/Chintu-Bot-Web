@@ -8,8 +8,7 @@
     <title>Chintubot</title>
     <link rel="stylesheet" href="css/grid.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 </head>
 
 <body>
@@ -19,7 +18,7 @@
             <a href="/" class="navbar-brand">
                 <h1>Chintu Bot</h1>
             </a>
-            <div class="toggle">ff
+            <div class="toggle">
                 <i class="fas fa-bars"></i>
             </div>
             <div class="navbar-nav">
@@ -30,41 +29,30 @@
         </div>
     </nav>
     <!-- Navbar Ends  -->
-    <div class="bot-name">
-        Chintu Bot
-        <p class="server-count" id="servers">Currently in ⌛ servers
-        </p>
-    </div>
-
-    <script>
-        var response = fetch('https://api.jsonbin.io/b/601ee476d5aafc6431a4d96b/11', {
-            method: 'GET',
-            headers: {
-                'secret-key': '$2b$10$OgkBiBLjDeLFpRDpKaSwJOHZDsGclpeBgWobwl4ZqEta2M21auKJe'
-            }
-        }).then(response => response.json()).then(data => document.getElementById("servers").innerHTML =
-            "Currently in " + data.total_servers + " servers"
-        ); //appendChild(document.createTextNode(data.total_servers+" servers")));
-    </script>
-
-
-
-    <div class="rounded-button">
-        <div class="link">
-            <a href="https://discord.com/api/oauth2/authorize?client_id=790900950885203978&permissions=0&scope=bot">Add
-                to Server</a>
+    <!-- Hero Starts -->
+    <div class="container">
+        <div class="row hero">
+            <div class="col-12 col-md-6">
+                <div class="title">
+                    Chintu Bot
+                </div>
+                <div class="servercount" id="servercount">
+                    Currently in ⌛ servers
+                </div>
+                <a href="https://discord.com/api/oauth2/authorize?client_id=790900950885203978&permissions=0&scope=bot"
+                    class="addbutton">
+                    Add to Server
+                </a>
+            </div>
+            <div class="col-12 col-md-6 joindiscord">
+                <iframe src="https://discord.com/widget?id=774508475337932830&theme=dark" width="350" height="500"
+                    allowtransparency="true" frameborder="0"
+                    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+                </iframe>
+            </div>
         </div>
     </div>
-
-    <div class="widget">
-        <iframe src="https://discord.com/widget?id=774508475337932830&theme=dark" width="350" height="500"
-            allowtransparency="true" frameborder="0"
-            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
-        </iframe>
-    </div>
-
-
-
+    <!-- Hero Ends  -->
     <script src="js/script.js"></script>
 </body>
 
