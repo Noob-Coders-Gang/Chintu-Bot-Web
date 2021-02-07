@@ -11,11 +11,8 @@ navbarNav.addEventListener('click', () => {
 
 const servercount = document.getElementById("servercount");
 if (servercount) {
-    var response = fetch('https://api.jsonbin.io/b/601fd08306934b65f52f9c21', {
-        method: 'GET',
-        headers: {
-            'secret-key': '$2b$10$a6p5jjOS/B8kt5XvcI.qEeuacgrRS.3YzUAyojN4UvhjWiQ1TcvAe'
-        }
+    var response = fetch('https://jsonblob.com/api/jsonBlob/53780253-693c-11eb-b382-45923ea53bb5', {
+        method: 'GET'
     }).then(response => response.json()).then(data => servercount.innerHTML =
         "Currently in " + data.total_servers + " servers"
     ); //appendChild(document.createTextNode(data.total_servers+" servers")));
