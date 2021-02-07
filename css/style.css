@@ -10,7 +10,6 @@
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    line-height: 28px;
     
     color: #FFFFFF;
 }
@@ -33,7 +32,6 @@ body {
     font-style: normal;
     font-weight: bold;
     font-size: 96px;
-    line-height: 112px;
     color: #FFFFFF;
 }
 
@@ -61,7 +59,6 @@ a {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 21px;
     color: #FFFFFF;
 }
 
@@ -85,7 +82,7 @@ top: 0px;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 21px;
+    
     /* identical to box height */
 
 
@@ -103,7 +100,6 @@ top: 0px;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 21px;
     /* identical to box height */
 
 
@@ -121,7 +117,6 @@ top: 0px;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 21px;
     /* identical to box height */
 
 
@@ -182,7 +177,6 @@ top: 0px;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
-    line-height: 112px;
     color: #FFFFFF;
     text-align: center;
 }
@@ -192,7 +186,6 @@ top: 0px;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
-    line-height: 112px;
     color: #FFFFFF;
     text-align: center;
 }
@@ -202,7 +195,6 @@ top: 0px;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
-    line-height: 112px;
     color: #FFFFFF;
     text-align: left;
 }
@@ -212,7 +204,6 @@ top: 0px;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
-    line-height: 20px;
     color: #FFFFFF;
     text-align: left;
 }
