@@ -11,10 +11,10 @@ navbarNav.addEventListener('click', () => {
 
 const servercount = document.getElementById("servercount");
 if (servercount) {
-    var response = fetch('https://api.jsonbin.io/b/601ee476d5aafc6431a4d96b/11', {
+    var response = fetch('https://api.jsonbin.io/b/601fd08306934b65f52f9c21', {
         method: 'GET',
         headers: {
-            'secret-key': '$2b$10$OgkBiBLjDeLFpRDpKaSwJOHZDsGclpeBgWobwl4ZqEta2M21auKJe'
+            'secret-key': '$2b$10$a6p5jjOS/B8kt5XvcI.qEeuacgrRS.3YzUAyojN4UvhjWiQ1TcvAe'
         }
     }).then(response => response.json()).then(data => servercount.innerHTML =
         "Currently in " + data.total_servers + " servers"
