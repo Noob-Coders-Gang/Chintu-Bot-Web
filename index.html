@@ -6,14 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chintubot</title>
+    <link rel="stylesheet" href="css/grid.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1 class="title">Chintubot</h1>
-
+    <!-- Navbar Starts  -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="navbar-brand">
+                <h1>Chintu Bot</h1>
+            </a>
+            <div class="toggle">ff
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="about.html" class="nav-item">About</a>
+                <a href="commands.html" class="nav-item">Commands</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Ends  -->
     <div class="bot-name">
         Chintu Bot
         <p class="server-count" id="servers">Currently in ⌛ servers
@@ -23,9 +39,12 @@
     <script>
         var response = fetch('https://api.jsonbin.io/b/601ee476d5aafc6431a4d96b/11', {
             method: 'GET',
-            headers: { 'secret-key': '$2b$10$OgkBiBLjDeLFpRDpKaSwJOHZDsGclpeBgWobwl4ZqEta2M21auKJe' }
-        }).then(response => response.json()).then(data => document.getElementById("servers").innerHTML = "Currently in " + data.total_servers + " servers");//appendChild(document.createTextNode(data.total_servers+" servers")));
-
+            headers: {
+                'secret-key': '$2b$10$OgkBiBLjDeLFpRDpKaSwJOHZDsGclpeBgWobwl4ZqEta2M21auKJe'
+            }
+        }).then(response => response.json()).then(data => document.getElementById("servers").innerHTML =
+            "Currently in " + data.total_servers + " servers"
+        ); //appendChild(document.createTextNode(data.total_servers+" servers")));
     </script>
 
 
@@ -46,17 +65,7 @@
 
 
 
-    <div class="home">
-        <a href="index.html">Home</a>
-    </div>
-
-    <div class="about">
-        <a href="about.html">About</a>
-    </div>
-
-    <div class="commands">
-        <a href="commands.html">Commands</a>
-    </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

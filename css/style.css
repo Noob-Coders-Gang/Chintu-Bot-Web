@@ -1,27 +1,76 @@
-
-.title {
-    position: absolute;
-    width: 113px;
-    height: 28px;
-    left: 102px;
-    top: 36px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    
-    color: #FFFFFF;
-}
-
 body {
     background-color: #2C2F33;
-    background-image: url(https://i.redd.it/vda9rbt01en01.png) ;
+    background-image: url(https://i.redd.it/vda9rbt01en01.png);
     width: auto;
+    height: auto;
+    font-family: Roboto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* NavBar Starts */
+.navbar {
+    color: #fff;
+    height: 77px;
+    line-height: 77px;
+    font-weight: 600;
+    -webkit-box-shadow: 0px 0px 30px 0.1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 30px 0.1px rgba(0, 0, 0, 0.25);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+/* NavBar Logo */
+.navbar .navbar-brand {
+    float: left;
+    font-size: 20px;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Mobile View Toggle Button */
+.toggle {
+    float: right;
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* NavBar Options */
+.navbar-nav {
+    height: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: right;
+    font-size: 15px;
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+
+.navbar-nav .nav-item {
+    padding: 0px 30px;
     height: auto;
 }
 
-.bot-name{
+.navbar-nav .nav-item:hover {
+    color: #a8a8a8;
+}
+
+/* NavBar Ends */
+
+
+
+.bot-name {
     position: absolute;
     width: 454px;
     height: 113px;
@@ -41,10 +90,10 @@ body {
     height: 50px;
     left: 220px;
     top: 600px;
-    
+
     background: #7289DA;
     border-radius: 25px;
-    
+
 }
 
 a {
@@ -64,63 +113,11 @@ a {
 
 .image {
     position: absolute;
-width: 720px;
-height: 1024px;
-left: 1185px;
-top: 0px;
+    width: 720px;
+    height: 1024px;
+    left: 1185px;
+    top: 0px;
 
-}
-
-.home {
-    position: absolute;
-    width: 49px;
-    height: 21px;
-    left: 1400px;
-    top: 39px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    
-    /* identical to box height */
-
-
-    color: #FFFFFF;
-}
-
-.about {
-    position: absolute;
-    width: 49px;
-    height: 21px;
-    left: 1600px;
-    top: 39px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    /* identical to box height */
-
-
-    color: #FFFFFF;
-}
-
-.commands {
-    position: absolute;
-    width: 49px;
-    height: 21px;
-    left: 1750px;
-    top: 39px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    /* identical to box height */
-
-
-    color: #FFFFFF;
 }
 
 .gaurav {
@@ -131,7 +128,7 @@ top: 0px;
     top: 261px;
 
     background: #7289DA;
-    
+
 }
 
 .gaurav-img {
@@ -148,6 +145,7 @@ top: 0px;
 
     background: #7289DA;
 }
+
 .devansh {
     position: absolute;
     width: 300px;
@@ -244,4 +242,29 @@ top: 0px;
     line-height: 10px;
     color: #FFFFFF;
     text-align: center;
+}
+
+
+@media (max-width: 992px) {
+    .navbar .navbar-nav {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 0;
+        position: absolute;
+        top: 77px;
+        left: -100%;
+        width: 100%;
+        text-align: center;
+        background-color: #2C2F33;
+    }
+
+    .navbar .toggle {
+        display: block;
+    }
+
+    .navbar .show {
+        left: 0%;
+    }
 }
