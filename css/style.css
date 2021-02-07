@@ -124,7 +124,7 @@ a {
     height: calc(100vh - 77px);
 }
 
-.about .col-6 {
+.about .col-12 {
     margin-top: auto;
     margin-bottom: auto;
 }
