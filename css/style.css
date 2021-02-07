@@ -10,6 +10,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-size: cover;
 }
 
 a {
@@ -86,6 +87,7 @@ a {
     margin-top: auto;
     margin-bottom: auto;
 }
+
 
 .hero .title {
     font-weight: bold;
