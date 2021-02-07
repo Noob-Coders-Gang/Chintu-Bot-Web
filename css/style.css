@@ -227,6 +227,7 @@ a {
 
     .hero .addbutton {
         font-size: 18px;
+        width: 150px;
     }
 
     .hero .joindiscord {
@@ -247,13 +248,3 @@ a {
     }
 }
 
-.rounded-button-2 {
-    position: absolute;
-    width: 250px;
-    height: 50px;
-    left: 220px;
-    top: 700px;
-
-    background: #7289DA;
-    border-radius: 25px;
-}
