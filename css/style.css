@@ -227,8 +227,11 @@ a {
 
     background: #7289DA;
     border-radius: 25px;
+}
 
-
+.hero {
+        height: 200vh;
+    }
 
 .hero .title {
         font-size: 72px;
@@ -254,4 +257,3 @@ a {
 .aboutcard {
         margin-bottom: 30px;
     }
-}
