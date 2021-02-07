@@ -1,0 +1,7 @@
+git add .
+if [ -z "$1" ]; then
+    git commit -am "Legacy Code"
+else
+    git commit -am "$1"
+fi
+git push origin master
