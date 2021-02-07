@@ -268,3 +268,14 @@ a {
         left: 0%;
     }
 }
+
+.rounded-button-2 {
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    left: 220px;
+    top: 700px;
+
+    background: #7289DA;
+    border-radius: 25px;
+}
