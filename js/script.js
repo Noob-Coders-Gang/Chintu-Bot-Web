@@ -17,7 +17,7 @@ if (servercount) {
         method: 'GET'
     }).then(response => response.json()).then(data => servercount.innerHTML =
         "Currently in " + data.total_servers + " servers"
-    ); //appendChild(document.createTextNode(data.total_servers+" servers")));
+    );
 }
 const options = document.querySelectorAll('.option');
 const allCommands = document.querySelectorAll('.command')
