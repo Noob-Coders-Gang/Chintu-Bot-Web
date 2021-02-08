@@ -1,6 +1,8 @@
 const navbarNav = document.querySelector('.navbar-nav');
 const toggle = document.querySelector('.toggle');
-
+window.onload = function () {
+    document.querySelector('.loading').style.display = "none";
+};
 toggle.addEventListener('click', () => {
     navbarNav.classList.toggle('show');
 });
