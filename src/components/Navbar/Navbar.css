@@ -1,0 +1,81 @@
+.navbar {
+    color: #fff;
+    height: 77px;
+    line-height: 77px;
+    font-weight: 600;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    width: 100%;
+}
+
+/* NavBar Logo */
+.navbar .navbar-brand {
+    float: left;
+    font-size: 20px;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Mobile View Toggle Button */
+.toggle {
+    float: right;
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* NavBar Options */
+.navbar-nav {
+    height: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: right;
+    font-size: 15px;
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+
+.navbar-nav .nav-item {
+    padding: 0px 30px;
+    height: auto;
+}
+
+.navbar-nav .nav-item:hover {
+    color: #a8a8a8;
+}
+
+.navbar-nav .nav-item .joindiscord {
+    background-color: #7289DA;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+@media (max-width: 992px) {
+
+    .navbar .navbar-nav {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 0;
+        position: absolute;
+        top: 77px;
+        left: -100%;
+        width: 100%;
+        text-align: center;
+        background-color: #2C2F33;
+        z-index: 1;
+    }
+
+    .navbar .toggle {
+        display: block;
+    }
+
+    .navbar .show {
+        left: 0%;
+    }
+}

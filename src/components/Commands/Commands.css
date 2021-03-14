@@ -1,0 +1,47 @@
+.commandoptions {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #292929;
+    margin: 0px 10px 10px 0px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.active {
+    background-color: #7289DA;
+}
+
+.commands .command {
+    background-color: #292929;
+    padding: 20px 10px;
+    font-size: 22px;
+    margin: 30px 0px;
+    border-radius: 5px;
+}
+
+.commands .command .description {
+    font-size: 16px;
+    color: #a5a5a5;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+.search {
+    background-color: #292929;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
