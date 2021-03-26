@@ -7,7 +7,7 @@ const data = [{
 
     },
     {
-        image: "https://cdn.discordapp.com/attachments/819532187820883968/819532250163970068/soulless.jpg",
+        image: "https://cdn.discordapp.com/attachments/819532187820883968/825020091254308974/unknown.png",
         name: "Rahul Mishra",
         github: "https://github.com/Supreme-Watermelon",
         instagram: "https://www.instagram.com/real_muthafuckin_mishra/",
