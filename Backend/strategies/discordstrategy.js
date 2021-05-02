@@ -25,6 +25,7 @@ passport.use(new DiscordStrategy({
     scope: ['identify', 'guilds']
 }, async (accessToken, refreshToken, profile, done) => {
     try{
+        console.log(profile)
         const user = await DiscordUser.findOne({ discordId: profile.id});
         if(user) {
             console.log('a known user entered!')
@@ -34,6 +35,7 @@ passport.use(new DiscordStrategy({
             const newUser = await DiscordUser.create({
                 discordId: profile.id,
                 username: profile.username,
+                guilds : profile.guilds,
             });
             const savedUser = await newUser.save();
             done(null, savedUser);
