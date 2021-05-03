@@ -22,6 +22,8 @@ app.get('/' , (req , res) => {
         response : "Hello there!"
     })
 })
+const dashboardRoute = require('./routes/dashboard')
+
 
 // Passport
 app.use(passport.initialize());
@@ -33,10 +35,11 @@ app.use(session({
     cookie : {
         maxAge : 86400*2
     },
-    saveUninitialized : false
+    saveUninitialized : false,
+    name : "Discord.oAuth2"
 }))
 app.use('/auth' , authRoute);
-
+app.use('/dashboard' , dashboardRoute);
 
 
 app.listen(port, () => {

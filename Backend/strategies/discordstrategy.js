@@ -28,8 +28,14 @@ passport.use(new DiscordStrategy({
         console.log(profile)
         const user = await DiscordUser.findOne({ discordId: profile.id});
         if(user) {
-            console.log('a known user entered!')
-            done(null, user);
+            const UpdatedUser = await DiscordUser.update({ _id : user.id } ,{$set : { 
+                username : profile.username,
+                guilds : profile.guilds
+            }},(err,data)=>{  
+                if(err){  
+                    console.log('update error',err)  
+                }  })
+                done(null, user);
         }else{
             console.log('a new user entered!')
             const newUser = await DiscordUser.create({
