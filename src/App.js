@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Commands from "./components/Commands";
+import Dashboard from "./components/Dashboard/Dashboard"
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -33,6 +34,9 @@ function App() {
           </Route>
           <Route path="/commands">
             <Commands />
+          </Route>
+          <Route path="/Dashboard">
+            <Dashboard />
           </Route>
         </Switch>
       </Router>
