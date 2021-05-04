@@ -2,8 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import chintu from './img/chintu.png'
 function Dashboard() {
+
     return (
         <Wrapper >
+
             <Card>
                 <ChintuCard>
                     <img src={chintu} />
@@ -23,6 +25,16 @@ function Dashboard() {
 
 export default Dashboard;
 
+const Wrapper = styled.div`
+text-align: center;
+margin-top : 10%;
+display: flex;
+justify-content: center;
+
+
+`
+
+
 const Login = styled.a`
 
 
@@ -39,13 +51,6 @@ const Login = styled.a`
 
     
 `
-const Wrapper = styled.div`
-text-align: center;
-margin-top : 10%;
-display: flex;
-justify-content: center;
-
-`
 const Card = styled.div`
 display: flex;
 justify-content: center;
@@ -53,18 +58,14 @@ background-color : #f8f8f8;
 border-radius : 20px;
 @media (max-width: 768px) {
     flex-direction: column;
+    width : 90%;
+    img {
+        width : 90%;
+    }
   }
-`
-const LoginCard = styled.div`
-/* display :  flex ; */
-
-div{
-    padding : 20px;
-}
-p {
+  p {
     color : black;
 }
-
 `
 
 const ChintuCard = styled.div`
@@ -75,9 +76,6 @@ img{
     max-width : 350px;
     padding-top : 20px;
 }
-p {
-    color : black;
-}
 
 `
 const Title = styled.div`
@@ -85,3 +83,14 @@ font-size: 3rem;
 font-weight: 600;
 color: #7289DA;
 `
+
+const LoginCard = styled.div`
+/* display :  flex ; */
+
+div{
+    padding : 20px;
+}
+
+
+`
+
