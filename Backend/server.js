@@ -16,11 +16,9 @@ app.use(express.json());
 
 
 // Routes
-const authRoute = require('./routes/auth')
+const authRoute = require("./routes/auth")
 app.get('/' , (req , res) => {
-    res.json({
-        response : "Hello there!"
-    })
+    res.json(req.user)
 })
 const dashboardRoute = require('./routes/dashboard')
 

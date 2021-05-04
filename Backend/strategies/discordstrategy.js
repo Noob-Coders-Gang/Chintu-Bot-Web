@@ -25,7 +25,7 @@ passport.use(new DiscordStrategy({
     scope: ['identify', 'guilds']
 }, async (accessToken, refreshToken, profile, done) => {
     try{
-        console.log(profile)
+
         const user = await DiscordUser.findOne({ discordId: profile.id});
         if(user) {
             const UpdatedUser = await DiscordUser.update({ _id : user.id } ,{$set : { 
