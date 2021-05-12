@@ -4,7 +4,7 @@ const commands = [{
         description: "Get a User's Avatar"
     },
     {
-        name: "channelinfo",
+        name: "channel_info",
         category: "info",
         description: "Get Channel's Details"
     }, {
@@ -15,7 +15,23 @@ const commands = [{
         name: "user",
         category: "info",
         description: "Get User's Details"
-    }, {
+    },
+    {
+        name: "ping",
+        category: "utility",
+        description: "Sends the latency of the bot"
+    },
+    {
+        name: "suggest",
+        category: "utility",
+        description: "Suggest a feature or an improvement for chintu!"
+    },
+    {
+        name: "invite",
+        category: "utility",
+        description: "Invite Chintu to your server!!!"
+    },
+    {
         name: "ban",
         category: "moderation",
         description: "Bans the mentioned member"
@@ -123,18 +139,6 @@ const commands = [{
         name: "CreateLiveSubs",
         category: "social",
         description: "Creates a voice channel with the subscribers of the given channel "
-    }, {
-        name: "add_reply",
-        category: "others",
-        description: ""
-    }, {
-        name: "ping",
-        category: "others",
-        description: "Shows Ping "
-    }, {
-        name: "help",
-        category: "others",
-        description: "Shows Help message"
     }
 ]
 export default commands;
