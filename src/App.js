@@ -10,13 +10,17 @@ const loader = document.querySelector(".loading");
 const hideLoader = () => loader.classList.add("d-none");
 
 function App() {
-  const [serverCount, setServerCount] = useState(0);
+  const [serverCount, setServerCount] = useState(69);
+
   const url =
-    "https://jsonblob.com/api/jsonBlob/53780253-693c-11eb-b382-45923ea53bb5";
+    "https://jsonblob.com/api/jsonBlob/3c2d82f0-a697-11eb-96c5-79d6d4e2d89b";
   useEffect(() => {
     fetch(url)
       .then((response) => response.json())
-      .then((data) => setServerCount(data.total_servers))
+      .then((data) => {
+        setServerCount(data.total_servers);
+        console.log(data);
+      })
       .catch((error) => setServerCount(69));
     hideLoader();
   }, []);
