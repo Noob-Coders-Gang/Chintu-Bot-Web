@@ -8,7 +8,7 @@ const Home = ({ serverCount }) => {
           <div className="subtitle">Currently in {serverCount} Servers</div>
           <a
             className="joinbtn"
-            href="https://discord.com/api/oauth2/authorize?client_id=790900950885203978&permissions=2453142599&scope=bot"
+            href="https://discord.com/oauth2/authorize?client_id=790900950885203978&scope=bot&permissions=2012605695"
           >
             Invite Now
           </a>
